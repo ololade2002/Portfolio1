@@ -21,9 +21,9 @@ const Header = () => {
           </Navbar.Toggle>
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto text-light ">
-              <Nav.Link href="#home">Home</Nav.Link>
-              <Nav.Link href="#skills">Skills</Nav.Link>
-              <Nav.Link href="#project">Project</Nav.Link>
+              <Nav.Link href="#">Home</Nav.Link>
+              <Nav.Link href="#">Skills</Nav.Link>
+              <Nav.Link href="#">Project</Nav.Link>
             </Nav>
             <div className="navbar-text">
                <div className="social">
