@@ -1,0 +1,143 @@
+
+.project {
+    margin-top: 7rem;
+    margin-bottom: 0rem;
+    padding: 0px 30px;
+}
+.project h2 {
+    color: white;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+.project p {
+    color: #d2cece;
+    width: 60%;
+    margin: 2rem auto;
+}
+
+.project .nav  {
+    width: 72%;
+    margin: 5rem auto 1rem auto;
+    overflow: hidden;
+}
+.nav-pills {
+overflow: hidden;
+background: rgba(217, 217, 217, 0.1);
+border-radius: 50px 50px 50px 50px;
+
+}
+.nav-item {
+    width: 33.33%;
+    overflow: hidden;
+}
+
+.project .nav-link {
+    padding: 1.4rem 2rem;
+   border-radius: 0;
+   font-size: 1rem;
+  transition: .7s ease-in-out;
+  position: relative;
+  color: white;
+z-index: 3;
+}
+
+.project .nav-pills .nav-link.active {
+    background-color: transparent;
+}
+.project .nav-link::before {
+    background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.5)
+     -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
+     content: '';
+     position: absolute;
+     z-index: -2;
+     width: 0;
+     height: 100%;
+     top: 0;
+     transition: .5s ease-in-out;
+     overflow: hidden;
+     left: 0;
+}
+.project .nav-link.active::before {
+    width: 100%;
+}
+#projects-tabs-tab-first {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 50px 0px 0px 50px;
+    overflow: hidden;
+}
+#projects-tabs-tab-second {
+   border-top: 1px solid rgba(255, 255, 255, 0.5);
+   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+   border-radius: 0px;
+}
+#projects-tabs-tab-third {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 0 50px 50px 0;
+}
+.img-box {
+    position: relative;
+ overflow: hidden;
+border-radius:20px;
+margin-top: 5rem;
+margin-bottom: 6rem;
+}
+.img {
+    border-radius: 20px;
+    position: relative;
+}
+.img-box::before {
+content: '';
+position: absolute;
+background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
+height: 0%;
+width: 100%;
+z-index: 5;
+transition: .7s ease-in-out;
+}
+.img-box:hover::before {
+    height: 100%;
+}
+.text {
+    position: absolute;
+    text-align: center;
+    top: 20%;
+    z-index: 999;
+    opacity: 0;
+    transition: .7s ease-in-out;
+}
+.img-box:hover .text {
+    opacity: 1;
+    top: 35%;
+}
+.text>h2 {
+    color: black;
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+.text>p {
+    color: black;
+   padding-top: 0;
+   margin-top: 0;
+    width: 100%;
+    font-size: .9rem;
+    font-weight: 400;
+}
+
+
+@media screen and (max-width:992px) {
+    .project {
+        padding: 0px 0px;
+        margin-top: 8rem;
+        margin-bottom: 8rem;
+    }
+    .project p {
+        width: 100%;
+    }
+    .project .nav {
+        width: 100%;
+    }
+    .img-box {
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    }
+}

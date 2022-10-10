@@ -1,0 +1,108 @@
+ 
+ .hero {
+
+   background-image: url('../../assets/img/banner-bg.png');
+   background-size: cover;
+   background-position: top center;
+   background-repeat: no-repeat;
+padding: 0;
+margin: 0;
+overflow-x: hidden;
+ }
+ .hero-body {
+    margin: 0rem 0rem 4rem 0rem;
+    padding: 0px 30px;
+    margin-bottom: 13rem;
+ }
+.left-hero {
+    text-align: start;
+}
+ .left-hero>h3 {
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
+width: fit-content;
+font-weight: 300;
+font-size: 1.3rem;
+margin-bottom: 2rem;
+padding: 0.6rem .5rem;
+ }
+ .left-hero>h1 {
+    font-size: 3.7rem;
+    color: #fff;
+    margin: 1rem 0rem;
+ }
+ .left-hero>p {
+    color: #d2cece;
+    margin-bottom: 2rem;
+    font-weight: 300;
+ }
+.left-hero>button {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    color: #fff;
+    padding: 12px 1rem;
+   transition: .4s ease-in-out;
+display: flex;
+align-items: center;
+    gap: .2rem;
+}
+.left-hero>button>svg {
+    margin-left: 10px;
+    transition: .4s ease-in-out;
+}
+.left-hero>button:hover svg {
+    margin-left: 25px;
+}
+
+ .right-hero>img {
+    width: 500px;
+    transform: translateY(-1rem);
+   animation: updown 3s linear  infinite ;
+ }
+
+ @keyframes updown {
+    0% {
+        transform: translateY(-20px);
+    }
+    50% {
+        transform: translateY(20px);
+    }
+    100% {
+        transform: translateY(-20px);
+    }
+ }
+
+
+ @media screen and (max-width:991px) {
+    .hero {
+    margin-bottom: 0rem;
+
+    }
+    .hero-body {
+        display: flex;
+        flex-direction: column-reverse;
+        padding:0px 0px;
+        margin-top: 1rem;
+        row-gap: 3rem;
+    }
+    .left-hero {
+      text-align: center;
+    }
+    .left-hero>h3 {
+        text-align: center;
+        font-size: large;
+       
+        margin: 0 auto;
+    }
+    .left-hero>h1 {
+        font-size: xx-large;
+    }
+    .left-hero>button {
+        margin: 0px auto;
+    }
+ }
+
+ @media screen and (max-width:767px)  {
+
+ }

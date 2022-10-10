@@ -1,0 +1,77 @@
+
+.contact {
+    background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+
+}
+.body {
+  display: flex;
+padding: 5rem 0 7rem 0;
+}
+
+.left-c>img {
+  width: 700px;
+  animation: form 3s linear  infinite ;
+}
+
+.right-c>h2 {
+  color: white !important;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+
+}
+
+form input {
+    width: 100%;
+    padding: 17px 20px;
+    border-radius: 16px;
+    border: none;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+  margin-bottom: 1rem;
+}
+
+textarea {
+    width: 100%;
+    padding: 17px 20px;
+    border-radius: 16px;
+    border: none;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    margin-bottom: 1rem;
+}
+.contact ::placeholder {
+    color: white;
+    font-size: 1rem;
+    font-weight: 300;
+}
+.btn1 {
+    width: fit-content;
+    margin: auto;
+   border: none;
+   padding: 12px 2rem;
+   background: rgba(255, 255, 255, 0.1);
+   border: 1px solid rgba(255, 255, 255, 0.5);
+  color: white;
+   border-radius: 9px;
+   font-size: 1rem;
+}
+
+@keyframes form {
+    0% {
+        transform: translateY(-20px);
+    }
+    50% {
+        transform: translateY(20px);
+    }
+    100% {
+        transform: translateY(-20px);
+    }
+}
+
+@media screen  and (max-width:991px) {
+  .body {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5rem;
+  }
+}

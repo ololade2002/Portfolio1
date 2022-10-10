@@ -1,0 +1,12 @@
+
+.footer {
+    margin: 3rem 0rem 4rem 0rem;
+}
+.footer-body h2 {
+    color: white;
+}
+.social-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
